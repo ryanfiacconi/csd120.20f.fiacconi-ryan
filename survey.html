@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" author="Ryan Fiacconi" description="Favourite UFC Fighters">
+        <meta http-equiv="E-UA-Compatible" content="ie-edge">
+        <title>CSD120 - Ryan Fiacconi</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="UFCLogo.png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="UFCLogo.png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <a name="top"></a>
+        <div class="width-wrap">
+            <header id="top">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+
+                <h1>Survey</h1>
+
+                <form action="survey.cgi" method="POST">
+                    What is your name?
+                    <input type="text" name="name_field" size="35" maxlength="50"><br>
+                    What is your email?
+                    <input type="text" name="email_field" size="35" maxlength="100"><br>
+                    Which whole number is best?
+                    <input type="text" name="best_whole_number" size="10" maxlength="20"><br>
+                    Which day is best?
+                    <input type="date" name="best_day"></br>
+                    Which bear is the best?
+                    <select name="Bear">
+                        <option value=""></option>
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Care">Care</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Teddy">Teddy</option>
+                    </select></br>
+                    Do you like radio buttons?<br>
+                    <input type="radio" id="yes" name="radio" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="no">
+                    <label for="no">No</label><br>
+                    <input type="radio" id="other" name="radio" value="other">
+                    <label for="other">None of your business</label><br>
+                    What is the meaning of life?
+                    <textarea rows="5" cols="50"></textarea><br>
+                    <button type="button">Send</button>
+                </form>
+
+            </main>
+            <footer>
+                <hr>
+                <blockquote>"You miss 100% of the shots you don't take." </br><cite>- <span>Wayne Gretzky</span></cite></blockquote>
+                <p>© 2020 <a href="mailto:ryanfiacconi14@gmail.com?subject=Message from CSD120 Website">Ryan Fiacconi</a></p>
+                <a href="#top">◤</a>
+            </footer>
+        </div>
+
+    </body>
+</html> 
