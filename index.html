@@ -28,14 +28,18 @@
             </header>
             <main>
                 <h1>Welcome to Ryan's CSD120 Website</h1>
-                    <img src="IMG_5122.jpg" alt="Photo of myself" height="400px" width="300px"></br>
+                    <a href="images/IMG_5122.jpg">
+                        <img src="images/IMG_5122.jpg" alt="Photo of myself" height="400px" width="300px"
+                            sizes="(max-width:500px) 150px, 300px"
+                            srcset="images/IMG_5122_150w.jpg 150w, images/IMG5122_300w.jpg 300w">
+                    </a>
                 Hi, I am a Computer Programmer from Sault Ste. Marie, Ontario and I am currently working on an HTML5 website.
                 I am a fan of the UFC and have watched every fight for the past 5 or so years. I am exited to watch the
                 fights happening this weekend on Saturday. </br>
                 <h2>My Favourite UFC Fighters</h2>
                 <a href="https://www.ufc.com/" target="_blank">
                     <figure>
-                        <img src="UFCLogo.png" alt="UFC Logo" height="116px" width="360px">
+                        <img src="images/UFCLogo.png" alt="UFC Logo" height="116px" width="360px">
                         <figcaption>The logo of the Ultimate Fighing Championship</figcaption>
                     </figure>
                 </a>
@@ -56,7 +60,8 @@
 
                 <h3>Public Domain Audiobook</h3>
                 <audio controls>
-                    <source src="https://ia801508.us.archive.org/14/items/twelvetypes_2010_librivox/twelvetypes_01_chesterton_128kb.mp3" type="audio/mp3">
+                    <source src="https://ia801508.us.archive.org/14/items/twelvetypes_2010_librivox/twelvetypes_01_chesterton_128kb.mp3" type="audio/mpeg">
+                    <p><a href="https://ia801508.us.archive.org/14/items/twelvetypes_2010_librivox/twelvetypes_01_chesterton_128kb.mp3">Download the audiobook</a></p>
                 </audio>
 
                 <h3>Youtube Video</h3>
@@ -67,6 +72,11 @@
                 <hr>
                 <blockquote>"You miss 100% of the shots you don't take." </br><cite>- <span>Wayne Gretzky</span></cite></blockquote>
                 <p>© 2020 <a href="mailto:ryanfiacconi14@gmail.com?subject=Message from CSD120 Website">Ryan Fiacconi</a></p>
+                <picture>
+                    <source type="image/svg+xml" srcset="images/sc-logo.svg">
+                    <img src="images/sc-logo.png" width="70" alt="Sault College logo"
+                        srcset="images/sc-logo.png, images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x">
+                </picture>
                 <a href="#top">◤</a>
             </footer>
         </div>
