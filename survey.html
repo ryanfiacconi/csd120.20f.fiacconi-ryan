@@ -30,35 +30,66 @@
 
                 <h1>Survey</h1>
 
-                <form action="survey.cgi" method="POST">
-                    What is your name?
-                    <input type="text" name="name_field" size="35" maxlength="50"><br>
-                    What is your email?
-                    <input type="text" name="email_field" size="35" maxlength="100"><br>
-                    Which whole number is best?
-                    <input type="text" name="best_whole_number" size="10" maxlength="20"><br>
-                    Which day is best?
-                    <input type="date" name="best_day"></br>
-                    Which bear is the best?
-                    <select name="Bear">
-                        <option value=""></option>
-                        <option value="Black">Black</option>
-                        <option value="Brown">Brown</option>
-                        <option value="Care">Care</option>
-                        <option value="Panda">Panda</option>
-                        <option value="Polar">Polar</option>
-                        <option value="Teddy">Teddy</option>
-                    </select></br>
-                    Do you like radio buttons?<br>
-                    <input type="radio" id="yes" name="radio" value="yes">
-                    <label for="yes">Yes</label><br>
-                    <input type="radio" id="no" name="radio" value="no">
-                    <label for="no">No</label><br>
-                    <input type="radio" id="other" name="radio" value="other">
-                    <label for="other">None of your business</label><br>
-                    What is the meaning of life?
-                    <textarea rows="5" cols="50"></textarea><br>
-                    <button type="button">Send</button>
+                <form action="__survey.cgi" method="POST">
+                    <p>
+                        <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></abbr></label>
+                        <input type="text" name="name_field" id="name_field" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
+                        <input type="email" name="email_field" id="email_field" required>
+                    </p>
+    
+                    <p>
+                        <label for="best_integer">Which whole number is best?</label>
+                        <input type="number" name="best_whole_number" step="1" min="1" id="best_integer">
+                    </p>
+    
+                    <p>
+                        <label for="best_day">Which day is best?</label>
+                        <input type="date" name="best_day" id="best_day">
+                    </p>
+    
+                    <p>
+                        <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+                        <select name="best_bear" id="best_bear" required>
+                            <option></option>
+                            <option>Black</option>
+                            <option>Brown</option>
+                            <option>Care</option>
+                            <option>Panda</option>
+                            <option>Polar</option>
+                            <option>Teddy</option>
+                        </select>
+                    </p>
+    
+                    <fieldset>
+                        <legend>Do you like radio buttons?</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="likes_radio_buttons" value="yes" id="likes_radio_buttons_yes">
+                                <label for="likes_radio_buttons_yes">Yes</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likes_radio_buttons" value="no" id="likes_radio_buttons_no">
+                                <label for="likes_radio_buttons_no">No</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likes_radio_buttons" value="?" checked id="likes_radio_buttons_maybe">
+                                <label for="likes_radio_buttons_maybe">None of your business</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+    
+                    <p>
+                        <label for="life_meaning">What is the meaning of life?</label>
+                        <textarea name="life_meaning" id="life_meaning" cols="50" rows="5"
+                            placeholder="Enter the correct answer here"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
                 </form>
 
             </main>
